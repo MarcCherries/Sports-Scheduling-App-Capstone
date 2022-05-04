@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'authentication.apps.AuthenticationConfig',
     'corsheaders',
     'cars.apps.CarsConfig',
-    'users',
     'events',
     'replies',
     'locations',

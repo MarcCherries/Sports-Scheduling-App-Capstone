@@ -1,9 +1,9 @@
 from django.db import models
-from users.models import User
+from authentication.models import User
 from locations.models import Location
 
 class Event(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ManyToManyField(User)
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     date_time = models.DateTimeField()
     event_type = models.CharField(max_length=50)

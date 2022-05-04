@@ -1,6 +1,6 @@
 from django.db import models
 
-from users.models import User  
+from authentication.models import User  
 from events.models import Event
 
 class Comment(models.Model):
